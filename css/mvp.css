@@ -25,7 +25,17 @@ section p{
 #bild{
     border:#000;
     background-color: #000;
-   
+}
+#pic{
+    max-width: 640px;
+    max-height: 480px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+figcaption{
+    padding-left: 1%;
 }
 :root {
     --active-brightness: 0.85;
@@ -378,7 +388,7 @@ figure img {
 }
 
 figure figcaption {
-    color: var(--color-text-secondary);
+    color: var(--color-bg);
 }
 
 /* Forms */
