@@ -9,6 +9,24 @@
 #titel{
     color:white;
 }
+#untertitel{
+    color:var(--color-text);
+    font-weight: lighter;
+}
+#schlagzeile{
+    font-weight: bold;
+}
+section p{
+    display: inline-block;
+    max-width: 70%;
+   
+
+}
+#bild{
+    border:#000;
+    background-color: #000;
+   
+}
 :root {
     --active-brightness: 0.85;
     --border-radius: 5px;
@@ -274,6 +292,11 @@ sup {
 }
 
 /* Links */
+#LinkStart{
+    color:var(--color-text);
+
+}
+
 a {
     color: var(--color-link);
     display: inline-block;
