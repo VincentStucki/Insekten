@@ -1,11 +1,14 @@
 /* MVP.css v1.12 - https://github.com/andybrewer/mvp */
 
-#Bildtitel{
+h2{
     text-align: center;
 }
-#back{
- background-image: url("../img/Laub.jpg");
+
+section p{
+    display: inline-block;
+    max-width: 70%;
 }
+
 #titel{
     color:white;
 }
@@ -16,27 +19,86 @@
 #schlagzeile{
     font-weight: bold;
 }
-section p{
-    display: inline-block;
-    max-width: 70%;
-   
 
+/*Bilder und Hintergrundbilder*/
+#Bildtitel{
+    text-align: center;
 }
-#bild{
-    border:#000;
-    background-color: #000;
+
+#back{
+    border-radius: 25px;
+    background-image: url("../img/Laub.jpg");
 }
+
 #pic{
+    width: 100%;
     max-width: 640px;
+    height: 100%;
     max-height: 480px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
+}
+.bg{
+    border-radius: 25px;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    max-height: 150px;
+}
 
+/*Über Den Zoo*/
+#left{
+    width: 20em;
+    float:left;
+    margin-left: 5em;
 }
-figcaption{
-    padding-left: 1%;
+@media (min-width:750px) {
+    #rechts{
+        margin-left: auto;
+    }
 }
+@media (max-width:750px) {
+    #rechts{
+        margin-left: 4em;
+        margin-top: 1em;
+    }
+}
+/*Link*/
+#LinkStart{
+    color:var(--color-text);
+    
+ }
+
+/*Footer*/
+#impress{
+    text-align: left;
+}
+footer a{
+    color: var(--color-bg)
+}
+footer{
+    background-color: var(--color-button);
+    padding: 3rem 5rem;
+}
+footer p{
+    padding: 0 auto;
+}
+
+/*button anim*/
+.button {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: translateY(-5px);
+  }
+
 :root {
     --active-brightness: 0.85;
     --border-radius: 5px;
@@ -44,11 +106,12 @@ figcaption{
     --color-accent: #118bee15;
     --color-bg: #fff;
     --color-bg-secondary: #e9e9e9;
-    --color-link: #118bee;
-    --color-secondary: #920de9;
+    --color-link: #10d327;
+    --color-button: #08a41a;
+    --color-secondary: #0de927;
     --color-secondary-accent: #920de90b;
     --color-shadow: #f4f4f4;
-    --color-table: #118bee;
+    --color-table: #08a41a;
     --color-text: #000;
     --color-text-secondary: #999;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -67,11 +130,11 @@ figcaption{
         --color-accent: #0097fc4f;
         --color-bg: #333;
         --color-bg-secondary: #555;
-        --color-link: #0097fc;
+        --color-link: #10d327;
         --color-secondary: #e20de9;
         --color-secondary-accent: #e20de94f;
         --color-shadow: #bbbbbb20;
-        --color-table: #0097fc;
+        --color-table: #00fc86;
         --color-text: #f7f7f7;
         --color-text-secondary: #aaa;
     }
@@ -94,7 +157,7 @@ body {
     padding: 0;
 }
 
-footer,
+
 header,
 main {
     margin: 0 auto;
@@ -302,11 +365,6 @@ sup {
 }
 
 /* Links */
-#LinkStart{
-    color:var(--color-text);
-
-}
-
 a {
     color: var(--color-link);
     display: inline-block;
@@ -359,8 +417,8 @@ a b,
 a strong,
 button,
 input[type="submit"] {
-    background-color: var(--color-link);
-    border: 2px solid var(--color-link);
+    background-color: var(--color-button);
+    border: 2px solid var(--color-button);
     color: var(--color-bg);
 }
 
