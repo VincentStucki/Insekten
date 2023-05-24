@@ -16,7 +16,7 @@ section p{
     color:var(--color-text);
     font-weight: lighter;
 }
-#schlagzeile{
+.schlagzeile{
     font-weight: bold;
 }
 
@@ -33,7 +33,7 @@ section p{
     padding: 3rem 1rem;
 }
 
-#pic{
+.pic{
     width: 100%;
     max-width: 640px;
     height: 100%;
@@ -49,6 +49,10 @@ section p{
     max-width: 1000px;
     height: 100%;
     max-height: 150px;
+}
+#karte{
+    width: 300px;
+    height: 350px;
 }
 
 /*Über Den Zoo*/
@@ -76,7 +80,7 @@ section p{
  }
 
 /*Footer*/
-#impress{
+.impress{
     text-align: left;
 }
 footer a{
