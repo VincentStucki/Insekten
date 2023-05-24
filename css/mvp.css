@@ -12,7 +12,7 @@ section p{
 #titel{
     color:white;
 }
-#untertitel{
+.untertitel{
     color:var(--color-text);
     font-weight: lighter;
 }
@@ -21,13 +21,16 @@ section p{
 }
 
 /*Bilder und Hintergrundbilder*/
-#Bildtitel{
+.Bildtitel{
     text-align: center;
 }
 
 #back{
     border-radius: 25px;
     background-image: url("../img/Laub.jpg");
+    margin: 0 auto;
+    max-width: var(--width-content);
+    padding: 3rem 1rem;
 }
 
 #pic{
@@ -67,7 +70,7 @@ section p{
 }
 
 /*Link*/
-#LinkStart{
+.LinkStart{
     color:var(--color-text);
     
  }
